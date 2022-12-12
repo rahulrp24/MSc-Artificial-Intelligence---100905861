@@ -1,17 +1,46 @@
 # MSc-Artificial-Intelligence-project-100905861
 
-Dataset for emotion detection https://drive.google.com/file/d/18M8-Q1NCqxvbOjOgAEoBS1EdnXv3RhwH/view?usp=share_link
-
-[Image caption generation ] (https://colab.research.google.com/drive/1UIitY86B1Cz-_qsfhWyEmyjI4YXZup0t#scrollTo=okg_HXds0oHq)
-
-web development version of image caption generation https://project-msc-ai.s3.eu-west-2.amazonaws.com/Caption
 
 
+For image caption generation
 
-to install anaconda environment with all libraries necessary to run use the enviromnent file and enter the following command
-conda env install -f environment.yml
+upload the file in google colab to run.
+
+just need to run all the cells 
 
 
+For emotion recognition 
+
+setting up the environment
+
+download and install anaconda 
+
+download environment.yml file from    https://project-msc-ai.s3.eu-west-2.amazonaws.com/environment.yml
+
+please copy the downloaded file in   c://users/username/          **username is the windows username**
+
+open anaconda command prompt ( this is not the normal windows command prompt) and run the following code
+
+command conda env install -f environment.yml
+
+then activate the new environment -> conda activate project1
+
+
+download the dataset from https://project-msc-ai.s3.eu-west-2.amazonaws.com/fer2013.zip 
+
+extract the zip file 
+
+copy the train and test folder inside the dataset folder inside the emotion folder
+
+------ training -----
+in the anaconda command prompt type " python train.py " to start the training process, if error occurs please check if the dataset path is correct 
+
+------testing ------
+after training using the anaconda command prompt navigate to the emotion folder and type " python emotion.py "  
+
+to quit press " q "
+
+ 
 
 
 ----------------------------------------
